@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5E93E0BEE6E44A4E9D812428 /* libPods-WykopSDKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0BF41B618F4FCAB22ECCCE /* libPods-WykopSDKTests.a */; };
+		7648736319CD7C0F0049BECC /* WykopSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 7648736219CD7C0F0049BECC /* WykopSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7648737819CD854F0049BECC /* WKWykop.h in Headers */ = {isa = PBXBuildFile; fileRef = 7648737619CD854F0049BECC /* WKWykop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7648737919CD854F0049BECC /* WKWykop.m in Sources */ = {isa = PBXBuildFile; fileRef = 7648737719CD854F0049BECC /* WKWykop.m */; };
+		7648737D19CD8E3D0049BECC /* WKWykopSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 7648737C19CD8E3D0049BECC /* WKWykopSpecs.m */; };
+		7648738119CD96410049BECC /* WKRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 7648737F19CD96410049BECC /* WKRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7648738219CD96410049BECC /* WKRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7648738019CD96410049BECC /* WKRequest.m */; };
+		7648738419CD99F20049BECC /* WKRequestSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = 7648738319CD99F20049BECC /* WKRequestSpecs.m */; };
+		7648738719CD9D160049BECC /* WKParameter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7648738519CD9D160049BECC /* WKParameter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7648738819CD9D160049BECC /* WKParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7648738619CD9D160049BECC /* WKParameter.m */; };
+		7675C3CF19D3664D00A291AA /* WKEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3CD19D3664D00A291AA /* WKEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3D019D3664D00A291AA /* WKEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3CE19D3664D00A291AA /* WKEntry.m */; };
+		7675C3D319D3667200A291AA /* WKObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3D119D3667200A291AA /* WKObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3D419D3667200A291AA /* WKObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3D219D3667200A291AA /* WKObject.m */; };
+		7675C3D719D368E200A291AA /* WKUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3D519D368E200A291AA /* WKUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3D819D368E200A291AA /* WKUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3D619D368E200A291AA /* WKUser.m */; };
+		7675C3DB19D369FD00A291AA /* WKProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3D919D369FD00A291AA /* WKProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3DC19D369FD00A291AA /* WKProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3DA19D369FD00A291AA /* WKProfile.m */; };
+		7675C3DF19D36C0200A291AA /* WKComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3DD19D36C0200A291AA /* WKComment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3E019D36C0200A291AA /* WKComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3DE19D36C0200A291AA /* WKComment.m */; };
+		7675C3E319D36CFB00A291AA /* WKDig.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3E119D36CFB00A291AA /* WKDig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3E419D36CFB00A291AA /* WKDig.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3E219D36CFB00A291AA /* WKDig.m */; };
+		7675C3E719D36D6700A291AA /* WKLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3E519D36D6700A291AA /* WKLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3E819D36D6700A291AA /* WKLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3E619D36D6700A291AA /* WKLink.m */; };
+		7675C3EB19D36F0C00A291AA /* WKRelatedLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3E919D36F0C00A291AA /* WKRelatedLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3EC19D36F0C00A291AA /* WKRelatedLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3EA19D36F0C00A291AA /* WKRelatedLink.m */; };
+		7675C3F319D3712B00A291AA /* WKEntryComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3F119D3712B00A291AA /* WKEntryComment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3F419D3712B00A291AA /* WKEntryComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3F219D3712B00A291AA /* WKEntryComment.m */; };
+		7675C3F719D371DE00A291AA /* WKNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3F519D371DE00A291AA /* WKNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3F819D371DE00A291AA /* WKNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3F619D371DE00A291AA /* WKNotification.m */; };
+		7675C3FB19D373F000A291AA /* WKEmbed.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3F919D373F000A291AA /* WKEmbed.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C3FC19D373F000A291AA /* WKEmbed.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3FA19D373F000A291AA /* WKEmbed.m */; };
+		7675C3FF19D374CA00A291AA /* WKConversation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C3FD19D374CA00A291AA /* WKConversation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C40019D374CA00A291AA /* WKConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C3FE19D374CA00A291AA /* WKConversation.m */; };
+		7675C40319D375F700A291AA /* WKMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7675C40119D375F700A291AA /* WKMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7675C40419D375F700A291AA /* WKMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7675C40219D375F700A291AA /* WKMessage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7648735D19CD7C0F0049BECC /* WykopSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WykopSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7648736119CD7C0F0049BECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7648736219CD7C0F0049BECC /* WykopSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WykopSDK.h; sourceTree = "<group>"; };
+		7648736819CD7C0F0049BECC /* WykopSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WykopSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7648736B19CD7C0F0049BECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7648737619CD854F0049BECC /* WKWykop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWykop.h; sourceTree = "<group>"; };
+		7648737719CD854F0049BECC /* WKWykop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWykop.m; sourceTree = "<group>"; };
+		7648737C19CD8E3D0049BECC /* WKWykopSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWykopSpecs.m; sourceTree = "<group>"; };
+		7648737F19CD96410049BECC /* WKRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKRequest.h; path = CommunicationLayer/WKRequest.h; sourceTree = "<group>"; };
+		7648738019CD96410049BECC /* WKRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKRequest.m; path = CommunicationLayer/WKRequest.m; sourceTree = "<group>"; };
+		7648738319CD99F20049BECC /* WKRequestSpecs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKRequestSpecs.m; sourceTree = "<group>"; };
+		7648738519CD9D160049BECC /* WKParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKParameter.h; path = CommunicationLayer/WKParameter.h; sourceTree = "<group>"; };
+		7648738619CD9D160049BECC /* WKParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKParameter.m; path = CommunicationLayer/WKParameter.m; sourceTree = "<group>"; };
+		7675C3CD19D3664D00A291AA /* WKEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKEntry.h; path = DataLayer/WKEntry.h; sourceTree = "<group>"; };
+		7675C3CE19D3664D00A291AA /* WKEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKEntry.m; path = DataLayer/WKEntry.m; sourceTree = "<group>"; };
+		7675C3D119D3667200A291AA /* WKObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKObject.h; path = DataLayer/WKObject.h; sourceTree = "<group>"; };
+		7675C3D219D3667200A291AA /* WKObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKObject.m; path = DataLayer/WKObject.m; sourceTree = "<group>"; };
+		7675C3D519D368E200A291AA /* WKUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKUser.h; path = DataLayer/WKUser.h; sourceTree = "<group>"; };
+		7675C3D619D368E200A291AA /* WKUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKUser.m; path = DataLayer/WKUser.m; sourceTree = "<group>"; };
+		7675C3D919D369FD00A291AA /* WKProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKProfile.h; path = DataLayer/WKProfile.h; sourceTree = "<group>"; };
+		7675C3DA19D369FD00A291AA /* WKProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKProfile.m; path = DataLayer/WKProfile.m; sourceTree = "<group>"; };
+		7675C3DD19D36C0200A291AA /* WKComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKComment.h; path = DataLayer/WKComment.h; sourceTree = "<group>"; };
+		7675C3DE19D36C0200A291AA /* WKComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKComment.m; path = DataLayer/WKComment.m; sourceTree = "<group>"; };
+		7675C3E119D36CFB00A291AA /* WKDig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKDig.h; path = DataLayer/WKDig.h; sourceTree = "<group>"; };
+		7675C3E219D36CFB00A291AA /* WKDig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKDig.m; path = DataLayer/WKDig.m; sourceTree = "<group>"; };
+		7675C3E519D36D6700A291AA /* WKLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKLink.h; path = DataLayer/WKLink.h; sourceTree = "<group>"; };
+		7675C3E619D36D6700A291AA /* WKLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKLink.m; path = DataLayer/WKLink.m; sourceTree = "<group>"; };
+		7675C3E919D36F0C00A291AA /* WKRelatedLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKRelatedLink.h; path = DataLayer/WKRelatedLink.h; sourceTree = "<group>"; };
+		7675C3EA19D36F0C00A291AA /* WKRelatedLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKRelatedLink.m; path = DataLayer/WKRelatedLink.m; sourceTree = "<group>"; };
+		7675C3F119D3712B00A291AA /* WKEntryComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKEntryComment.h; path = DataLayer/WKEntryComment.h; sourceTree = "<group>"; };
+		7675C3F219D3712B00A291AA /* WKEntryComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKEntryComment.m; path = DataLayer/WKEntryComment.m; sourceTree = "<group>"; };
+		7675C3F519D371DE00A291AA /* WKNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKNotification.h; path = DataLayer/WKNotification.h; sourceTree = "<group>"; };
+		7675C3F619D371DE00A291AA /* WKNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKNotification.m; path = DataLayer/WKNotification.m; sourceTree = "<group>"; };
+		7675C3F919D373F000A291AA /* WKEmbed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKEmbed.h; path = DataLayer/WKEmbed.h; sourceTree = "<group>"; };
+		7675C3FA19D373F000A291AA /* WKEmbed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKEmbed.m; path = DataLayer/WKEmbed.m; sourceTree = "<group>"; };
+		7675C3FD19D374CA00A291AA /* WKConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKConversation.h; path = DataLayer/WKConversation.h; sourceTree = "<group>"; };
+		7675C3FE19D374CA00A291AA /* WKConversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKConversation.m; path = DataLayer/WKConversation.m; sourceTree = "<group>"; };
+		7675C40119D375F700A291AA /* WKMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WKMessage.h; path = DataLayer/WKMessage.h; sourceTree = "<group>"; };
+		7675C40219D375F700A291AA /* WKMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WKMessage.m; path = DataLayer/WKMessage.m; sourceTree = "<group>"; };
+		846655D69C2D4B5D97F82937 /* Pods-WykopSDKTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WykopSDKTests.xcconfig"; path = "Pods/Pods-WykopSDKTests.xcconfig"; sourceTree = "<group>"; };
+		8D0BF41B618F4FCAB22ECCCE /* libPods-WykopSDKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WykopSDKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7648735919CD7C0F0049BECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7648736519CD7C0F0049BECC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E93E0BEE6E44A4E9D812428 /* libPods-WykopSDKTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7012F46DC90F4884A8B93703 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D0BF41B618F4FCAB22ECCCE /* libPods-WykopSDKTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7648735319CD7C0F0049BECC = {
+			isa = PBXGroup;
+			children = (
+				7648735F19CD7C0F0049BECC /* WykopSDK */,
+				7648736919CD7C0F0049BECC /* WykopSDKTests */,
+				7648735E19CD7C0F0049BECC /* Products */,
+				846655D69C2D4B5D97F82937 /* Pods-WykopSDKTests.xcconfig */,
+				7012F46DC90F4884A8B93703 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7648735E19CD7C0F0049BECC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7648735D19CD7C0F0049BECC /* WykopSDK.framework */,
+				7648736819CD7C0F0049BECC /* WykopSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7648735F19CD7C0F0049BECC /* WykopSDK */ = {
+			isa = PBXGroup;
+			children = (
+				7675C3CC19D3657F00A291AA /* DataLayer */,
+				7648737E19CD95350049BECC /* CommunicationLayer */,
+				7648736219CD7C0F0049BECC /* WykopSDK.h */,
+				7648736019CD7C0F0049BECC /* Supporting Files */,
+				7648737619CD854F0049BECC /* WKWykop.h */,
+				7648737719CD854F0049BECC /* WKWykop.m */,
+			);
+			path = WykopSDK;
+			sourceTree = "<group>";
+		};
+		7648736019CD7C0F0049BECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7648736119CD7C0F0049BECC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7648736919CD7C0F0049BECC /* WykopSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				7648736A19CD7C0F0049BECC /* Supporting Files */,
+				7648737C19CD8E3D0049BECC /* WKWykopSpecs.m */,
+				7648738319CD99F20049BECC /* WKRequestSpecs.m */,
+			);
+			path = WykopSDKTests;
+			sourceTree = "<group>";
+		};
+		7648736A19CD7C0F0049BECC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7648736B19CD7C0F0049BECC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7648737E19CD95350049BECC /* CommunicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7648737F19CD96410049BECC /* WKRequest.h */,
+				7648738019CD96410049BECC /* WKRequest.m */,
+				7648738519CD9D160049BECC /* WKParameter.h */,
+				7648738619CD9D160049BECC /* WKParameter.m */,
+			);
+			name = CommunicationLayer;
+			sourceTree = "<group>";
+		};
+		7675C3CC19D3657F00A291AA /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				7675C3D119D3667200A291AA /* WKObject.h */,
+				7675C3D219D3667200A291AA /* WKObject.m */,
+				7675C3CD19D3664D00A291AA /* WKEntry.h */,
+				7675C3CE19D3664D00A291AA /* WKEntry.m */,
+				7675C3D519D368E200A291AA /* WKUser.h */,
+				7675C3D619D368E200A291AA /* WKUser.m */,
+				7675C3D919D369FD00A291AA /* WKProfile.h */,
+				7675C3DA19D369FD00A291AA /* WKProfile.m */,
+				7675C3DD19D36C0200A291AA /* WKComment.h */,
+				7675C3DE19D36C0200A291AA /* WKComment.m */,
+				7675C3E119D36CFB00A291AA /* WKDig.h */,
+				7675C3E219D36CFB00A291AA /* WKDig.m */,
+				7675C3E519D36D6700A291AA /* WKLink.h */,
+				7675C3E619D36D6700A291AA /* WKLink.m */,
+				7675C3E919D36F0C00A291AA /* WKRelatedLink.h */,
+				7675C3EA19D36F0C00A291AA /* WKRelatedLink.m */,
+				7675C3F119D3712B00A291AA /* WKEntryComment.h */,
+				7675C3F219D3712B00A291AA /* WKEntryComment.m */,
+				7675C3F519D371DE00A291AA /* WKNotification.h */,
+				7675C3F619D371DE00A291AA /* WKNotification.m */,
+				7675C3F919D373F000A291AA /* WKEmbed.h */,
+				7675C3FA19D373F000A291AA /* WKEmbed.m */,
+				7675C3FD19D374CA00A291AA /* WKConversation.h */,
+				7675C3FE19D374CA00A291AA /* WKConversation.m */,
+				7675C40119D375F700A291AA /* WKMessage.h */,
+				7675C40219D375F700A291AA /* WKMessage.m */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7648735A19CD7C0F0049BECC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7675C3D719D368E200A291AA /* WKUser.h in Headers */,
+				7675C3E319D36CFB00A291AA /* WKDig.h in Headers */,
+				7675C3EB19D36F0C00A291AA /* WKRelatedLink.h in Headers */,
+				7675C3FF19D374CA00A291AA /* WKConversation.h in Headers */,
+				7675C3FB19D373F000A291AA /* WKEmbed.h in Headers */,
+				7675C3CF19D3664D00A291AA /* WKEntry.h in Headers */,
+				7675C3F319D3712B00A291AA /* WKEntryComment.h in Headers */,
+				7675C3DF19D36C0200A291AA /* WKComment.h in Headers */,
+				7675C3DB19D369FD00A291AA /* WKProfile.h in Headers */,
+				7675C3F719D371DE00A291AA /* WKNotification.h in Headers */,
+				7675C40319D375F700A291AA /* WKMessage.h in Headers */,
+				7675C3D319D3667200A291AA /* WKObject.h in Headers */,
+				7675C3E719D36D6700A291AA /* WKLink.h in Headers */,
+				7648738119CD96410049BECC /* WKRequest.h in Headers */,
+				7648737819CD854F0049BECC /* WKWykop.h in Headers */,
+				7648738719CD9D160049BECC /* WKParameter.h in Headers */,
+				7648736319CD7C0F0049BECC /* WykopSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7648735C19CD7C0F0049BECC /* WykopSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7648737019CD7C0F0049BECC /* Build configuration list for PBXNativeTarget "WykopSDK" */;
+			buildPhases = (
+				7648735819CD7C0F0049BECC /* Sources */,
+				7648735919CD7C0F0049BECC /* Frameworks */,
+				7648735A19CD7C0F0049BECC /* Headers */,
+				7648735B19CD7C0F0049BECC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WykopSDK;
+			productName = WykopSDK;
+			productReference = 7648735D19CD7C0F0049BECC /* WykopSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7648736719CD7C0F0049BECC /* WykopSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7648737319CD7C0F0049BECC /* Build configuration list for PBXNativeTarget "WykopSDKTests" */;
+			buildPhases = (
+				B53CAF7CDCCC4B15A444B9AB /* Check Pods Manifest.lock */,
+				7648736419CD7C0F0049BECC /* Sources */,
+				7648736519CD7C0F0049BECC /* Frameworks */,
+				7648736619CD7C0F0049BECC /* Resources */,
+				18561AC8C8564BDD95BD03A7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WykopSDKTests;
+			productName = WykopSDKTests;
+			productReference = 7648736819CD7C0F0049BECC /* WykopSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7648735419CD7C0F0049BECC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "asdf-mobile";
+				TargetAttributes = {
+					7648735C19CD7C0F0049BECC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					7648736719CD7C0F0049BECC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 7648735719CD7C0F0049BECC /* Build configuration list for PBXProject "WykopSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7648735319CD7C0F0049BECC;
+			productRefGroup = 7648735E19CD7C0F0049BECC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7648735C19CD7C0F0049BECC /* WykopSDK */,
+				7648736719CD7C0F0049BECC /* WykopSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7648735B19CD7C0F0049BECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7648736619CD7C0F0049BECC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18561AC8C8564BDD95BD03A7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-WykopSDKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B53CAF7CDCCC4B15A444B9AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7648735819CD7C0F0049BECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7675C3E419D36CFB00A291AA /* WKDig.m in Sources */,
+				7675C3D019D3664D00A291AA /* WKEntry.m in Sources */,
+				7675C40019D374CA00A291AA /* WKConversation.m in Sources */,
+				7675C3F419D3712B00A291AA /* WKEntryComment.m in Sources */,
+				7675C3DC19D369FD00A291AA /* WKProfile.m in Sources */,
+				7648738819CD9D160049BECC /* WKParameter.m in Sources */,
+				7675C3E019D36C0200A291AA /* WKComment.m in Sources */,
+				7648737919CD854F0049BECC /* WKWykop.m in Sources */,
+				7648738219CD96410049BECC /* WKRequest.m in Sources */,
+				7675C3E819D36D6700A291AA /* WKLink.m in Sources */,
+				7675C3FC19D373F000A291AA /* WKEmbed.m in Sources */,
+				7675C3D819D368E200A291AA /* WKUser.m in Sources */,
+				7675C3F819D371DE00A291AA /* WKNotification.m in Sources */,
+				7675C40419D375F700A291AA /* WKMessage.m in Sources */,
+				7675C3EC19D36F0C00A291AA /* WKRelatedLink.m in Sources */,
+				7675C3D419D3667200A291AA /* WKObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7648736419CD7C0F0049BECC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7648738419CD99F20049BECC /* WKRequestSpecs.m in Sources */,
+				7648737D19CD8E3D0049BECC /* WKWykopSpecs.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7648736E19CD7C0F0049BECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7648736F19CD7C0F0049BECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7648737119CD7C0F0049BECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WykopSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		7648737219CD7C0F0049BECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WykopSDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+		7648737419CD7C0F0049BECC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 846655D69C2D4B5D97F82937 /* Pods-WykopSDKTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WykopSDK.framework/WykopSDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = WykopSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		7648737519CD7C0F0049BECC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 846655D69C2D4B5D97F82937 /* Pods-WykopSDKTests.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WykopSDK.framework/WykopSDK";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = WykopSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7648735719CD7C0F0049BECC /* Build configuration list for PBXProject "WykopSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7648736E19CD7C0F0049BECC /* Debug */,
+				7648736F19CD7C0F0049BECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7648737019CD7C0F0049BECC /* Build configuration list for PBXNativeTarget "WykopSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7648737119CD7C0F0049BECC /* Debug */,
+				7648737219CD7C0F0049BECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7648737319CD7C0F0049BECC /* Build configuration list for PBXNativeTarget "WykopSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7648737419CD7C0F0049BECC /* Debug */,
+				7648737519CD7C0F0049BECC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7648735419CD7C0F0049BECC /* Project object */;
+}
