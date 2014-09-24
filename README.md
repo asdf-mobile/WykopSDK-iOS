@@ -1,6 +1,6 @@
 # WykopSDK-iOS 
 
-This is (will be) an iOS wrapper around API of popular polish service [Wykop.pl](www.wykop.pl).
+This is (will be) an iOS wrapper around API of popular polish service [Wykop.pl](http://www.wykop.pl).
 
 Current version is:
 > 0.1
@@ -16,6 +16,7 @@ To be developed
 ## Planned features on next (first) release
 
 * Support for entries (microblog) lists
+* Support for CocoaPods
 
 ## ToDo list for next release
 
@@ -26,6 +27,8 @@ To be developed
 * Write comments for data objects and Request object
 * Write tests
 * Write support for getting entry list
+* Start PivotalTracker
+* Create podfile
 
 ## Contact
 
